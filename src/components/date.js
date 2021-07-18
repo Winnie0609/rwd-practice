@@ -6,14 +6,13 @@ function Date() {
 
     function convert() {
         const splitDate = userDate.split("/")
-        
+
         if (splitDate[0] > 31 || splitDate[0] < 1) {
             window.alert("Please enter a valid date.")
         } else if (splitDate[1] > 12 || splitDate[1] < 1) {
             window.alert("Please enter a valid month.")
         } else {
             setConvertDate(userDate.split("/").reverse().join("-")) 
-            console.log(userDate.split("/"))
             setUserDate("")
         }
     }

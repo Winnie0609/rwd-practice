@@ -9,7 +9,6 @@ function Cards () {
     async function getData () {
         const res = await fetch("https://www.mocky.io/v2/5d73bf3d3300003733081869")
         const data = await res.json()
-        // console.log(data)
         setData(data)
     }
 
@@ -21,20 +20,15 @@ function Cards () {
         switch(status) {
             case "below-20":
                 setFilterdAges(data.filter((item) => item.age <= 20))
-                console.log(filterdAges)
                 break
             case "between-21-39":
                 setFilterdAges(data.filter((item) => item.age > 20 && item.age < 40))
-                console.log(filterdAges)
                 break
             case "above-40":
                 setFilterdAges(data.filter((item) => item.age > 40))
-                console.log(filterdAges)
                 break
             default:
                 setFilterdAges(data)
-                console.log(filterdAges)
-                console.log("helllo")
         }
     }
 
