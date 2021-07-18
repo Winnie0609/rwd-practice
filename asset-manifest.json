@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/rwd-practice/static/css/main.2cb77674.chunk.css",
-    "main.js": "/rwd-practice/static/js/main.73258ce2.chunk.js",
-    "main.js.map": "/rwd-practice/static/js/main.73258ce2.chunk.js.map",
+    "main.js": "/rwd-practice/static/js/main.afd0caf5.chunk.js",
+    "main.js.map": "/rwd-practice/static/js/main.afd0caf5.chunk.js.map",
     "runtime-main.js": "/rwd-practice/static/js/runtime-main.b5b6c1dd.js",
     "runtime-main.js.map": "/rwd-practice/static/js/runtime-main.b5b6c1dd.js.map",
     "static/js/2.641070e2.chunk.js": "/rwd-practice/static/js/2.641070e2.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.b5b6c1dd.js",
     "static/js/2.641070e2.chunk.js",
     "static/css/main.2cb77674.chunk.css",
-    "static/js/main.73258ce2.chunk.js"
+    "static/js/main.afd0caf5.chunk.js"
   ]
 }
