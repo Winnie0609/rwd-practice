@@ -5,26 +5,23 @@ function Date() {
     const [convertDate, setConvertDate] = useState("")
 
     function convert() {
-        const splitDate = userDate.split("/")
-
-        if (splitDate[0] > 31 || splitDate[0] < 1) {
-            window.alert("Please enter a valid date.")
-        } else if (splitDate[1] > 12 || splitDate[1] < 1) {
-            window.alert("Please enter a valid month.")
-        } else {
-            setConvertDate(userDate.split("/").reverse().join("-")) 
-            setUserDate("")
-        }
+        console.log(userDate)
+        setUserDate(userDate.split("/").reverse().join("-")) 
+        console.log(userDate)
+        setConvertDate(userDate.split("/").reverse().join("-")) 
     }
 
     return (
         <div className="date-area">
             <label>Date</label>
             <div className="input-area">
-                <input
-                    type = "text"
+ 
+                <input 
+                    type="date" 
                     value = {userDate}
                     onChange={(e) => setUserDate(e.target.value)}
+                    data-date="" 
+                    data-date-format="DD MMMM YYYY"
                 />
                 <button onClick={() => convert()}><strong>CONVERT</strong></button>
             </div>
