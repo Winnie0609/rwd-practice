@@ -7,7 +7,7 @@ function Cards () {
     const [ filterdAges, setFilterdAges ] = useState(data)
 
     async function getData () {
-        const res = await fetch("http://www.mocky.io/v2/5d73bf3d3300003733081869")
+        const res = await fetch("https://www.mocky.io/v2/5d73bf3d3300003733081869")
         const data = await res.json()
         // console.log(data)
         setData(data)

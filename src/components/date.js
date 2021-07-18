@@ -6,9 +6,8 @@ function Date() {
 
     function convert() {
         const splitDate = userDate.split("/")
-        if (isNaN(splitDate)) {
-            window.alert("Please enter the number.")
-        } else if (splitDate[0] > 31 || splitDate[0] < 1) {
+        
+        if (splitDate[0] > 31 || splitDate[0] < 1) {
             window.alert("Please enter a valid date.")
         } else if (splitDate[1] > 12 || splitDate[1] < 1) {
             window.alert("Please enter a valid month.")
