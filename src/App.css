@@ -1,38 +1,207 @@
-.App {
+/* font-family: Myriad Pro */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===========
+header
+============== */
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #D21045;
+  text-transform: uppercase; 
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  color: #fff;
+  width: 5rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 1em;
+}
+
+nav ul li:last-child {
+  padding: 1.66em 1em;
+}
+
+nav ul li:hover {
+  color: #D21600;
+  background-color: #fff;
+}
+
+ul a {
+  text-decoration: none;
+
+}
+
+.logo {
+  width: 3rem;
+  margin: 0 7em 0 3em;
+  cursor: pointer;
+}
+
+h1 {
+  padding: .8em;
+  background-color: #F9F8F3;
+  text-transform: uppercase; 
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ===========
+Card
+============== */
+
+.content-container {
+  margin: 5em 8em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-area label,
+.date-area label {
+  font-size: .9rem;
+  font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.select-area,
+.date-area {
+  margin: 2em 2em;
+}
+
+.select-area {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card-area select {
+  margin-top: 1em;
+  width: 17rem;
+  height: 2rem;
+  border-color: #E4E4E4;
+  outline: none;
+  padding: 0 2rem 0 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.line {
+  height: 1.3em;
+  border-bottom: 3px solid #E4E4E4;
+  margin: 0 2em;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2em 0;
+}
+
+.card {
+  width: 18rem;
+  display: flex;
+  margin: 1em;
+  padding: 2em;
+  box-shadow: 0 6px 24px -1px rgba(0, 0, 0, 0.10);
+
+}
+
+/* card-details */
+.avatar {
+  width: 4.5rem;
+  margin-right: 1.5em;
+}
+
+.card-info .name {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: .5em;
+}
+
+.card-info p {
+  font-size: .8rem;
+}
+
+.card-info span{
+  font-weight: 600;
+}
+
+/* ============
+date-area
+=============== */
+
+.date-area input {
+  margin: 1em 1em 0 0;
+  width: 17rem;
+  height: 2rem;
+  border: 1.3px solid #E4E4E4;
+  outline: none;
+  text-indent: 1em;
+}
+
+.date-area button {
+  margin: 1em 1em 0 0;
+  color: #fff;
+  width: 10rem;
+  height: 2.5em;
+  border: none;
+  background-color: #D21045;
+  cursor: pointer;
+}
+
+.date-area button:hover {
+  color: #D21045;
+  border: 1px solid #D21045;
+  background-color: transparent;
+}
+
+.date-area p {
+  margin-top: 1em;
+  font-size: .9rem;
+}
+
+.date-area span {
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .logo {
+     margin: 1em 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    width: 110%;
+    text-align: center;
+    padding: 0;
+    margin-top: 1em;
+  }
+
+  nav ul li:last-child {
+    padding: 0;
+    margin-bottom: 1em;
+  }
+
+  .content-container {
+    margin: 5em 0;
+  }  
+
+  .date-area button{
+    width: 17rem;
   }
 }
